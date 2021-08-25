@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>validadorCPF.js</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <div class="jumbotron">
+        <div class="container" id="box">
+            <h1 class="page-header">validadorCPF.js</h1>
+            <div class="desc">
+                <h2>Validação de CPF em JavaScript</h2>
+                <p>Desenvolvido por <strong>Nathália Joana</strong> durante o <br>programa de bolsas
+                    <a target="blank" href="https://ambevtech.com.br/start-tech/">Start Tech</a>
+                    x
+                    <a target="blank" href="https://www.gama.academy/">Gama Academy</a>
+                </p>
+            </div>
+            <figure>
+                <img id="default" src="settings-colored.png" alt="ilustração">
+            </figure>
+        </div> 
+    </div>
+    <div class="container formulario">
+        <form>
+            <div class="form-group">
+                <div class="input-group input-group-lg">
+                    <span class="input-group-addon" id="sizing-addon1">CPF</span>
+                    <input id="cpf_digitado" type="text" class="form-control" placeholder="Digite o CPF"
+                        aria-describedby="sizing-addon1" required>
+                </div>
+                <small class="form-text text-muted">digite somente números</small>
+            </div>
+            <button type="button" class="btn btn-info" onclick="function validaGeral()" >Validar!</button>
+        </form>
+    </div>
+    <div class="container page-header">
+        <div id="success" class="alert alert-success" style="display: none;" role="alert">
+            Eba! Seu CPF é válido! 😄
+        </div>
+        <div id="error" class="alert alert-danger" style="display: none;" role="alert">
+            Eita! Seu CPF não é válido... 😥
+        </div>
+    </div>
+</body>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"></script>
+
+<script src="./script.js"></script>
+
+</html>

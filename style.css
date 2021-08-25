@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Didact Gothic', sans-serif;
+  color: #121213;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1.page-header {
+  width: 60%;
+  font-size: 300%;
+}
+
+img#default {
+  width: 80%;
+}
+
+.desc {
+  font-size: 120%;
+  width: 80%;
+}
+
+a {
+  color: #121213;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff6b99;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+strong {
+  color: #ff6b99;
+}
+
+.formulario {
+  margin-top: 5%;
+}
+
+
